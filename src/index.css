@@ -1,13 +1,186 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500;1,600&display=swap');
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Poppins";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  width:100vw;
+  height: 100vh;
+}
+.container{
+  display:flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.cs-main-container{
+  
+  display: none;
+}
+.cs-main-container .cs-chat-container{
+  padding: 20px 20px 0px 20px;
+}
+
+section{
+  margin: 0;
+}
+.cs-chat-container .cs-message-input{
+  width: 100%;
+}
+.cs-message-input::placeholder{
+  font-family: "Poppins";
+}
+
+.cs-message-input__content-editor{
+  font-family: "Poppins";
+}
+.cs-chat-container{
+  padding: 20px;
+}
+.info{
+  background-color:#a2d5ff;
+  padding: 50px 0px 0px 0px;
+  width: 550px;
+  height: 100vh;
+  display: block;
+  margin: auto;
+}
+.info_logo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url();
+  background-size: cover;
+  background-position: center center;
+  border: 2px solid #2d8fe07b;
+  display: flex;
+  margin: auto;
+  background-color: #bbb;
+}
+
+.info h1{
+  font-family: "Poppins";
+  text-align: center;
+  font-weight:300;
+  color: #202020;
+    margin: 10px 0px;
+    border-bottom: 1px solid #2d8fe07b;
+
+}
+
+.info_documentation{
+  padding: 50px 20px;
+}
+.info_documentation i{
+  margin: 20px 5px;
+  font-size: 25px;
+  text-align:center;
+  color: #2d8fe0;
+}
+.info_documentation a{
+  text-decoration:none;
+  font-size:18px;
+  color: black;
+  cursor: pointer;
+  text-align:center;
+}
+.cs-message-input__tools:first-child{display:none;}
+@media screen and (max-width:900px){
+  .info_documentation a{
+    text-decoration:none;
+    font-size:16px;
+    cursor: pointer;
+    text-align:center;
+  }
+  .info_documentation{
+    padding: 20px 10px;
+  }
+  .info h1{
+    font-family: "Poppins";
+    text-align: center;
+    font-weight:300;
+    font-size: 24px;
+    margin: 10px 0px;
+  }
+  .info_logo{
+    width: 180px;
+    height: 180px;
+
+  }
+}
+@media screen and (max-width:750px){
+  .info_documentation a{
+    text-decoration:none;
+    font-size:15px;
+    cursor: pointer;
+    text-align:center;
+  }
+  .info_documentation{
+    padding: 20px 10px;
+  }
+  .info h1{
+    font-family: "Poppins";
+    text-align: center;
+    font-weight:300;
+    font-size: 19px;
+    margin: 10px 0px;
+  }
+  .info_logo{
+    width: 150px;
+    height: 150px;
+
+  }
+  .info_documentation i{
+    margin: 20px 5px;
+    font-size: 22px;
+
+  }
+  .cs-message__html-content{
+    font-size: 13px;
+  }
+  .info_logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid #2d8fe07b;
+    display: flex;
+    margin: auto;
+  }
+}
+@media screen and (max-width:670px) {
+  .info{
+    display: none;
+  }
+
+}
+@media screen and (max-width:500px) {
+  .info{
+    display: none;
+  }
+  .cs-message-input__tools:first-child{
+    display:none;
+  }
+  .cs-message__html-content{
+    font-size: 12px;
+  }
+
+}
+@media screen and (max-width:400px) {
+  .info{
+    display: none;
+  }
+  .cs-message-input__tools:first-child{
+    display:none;
+  }
+  .cs-message__html-content{
+    font-size: 11px;
+  }
+
 }
