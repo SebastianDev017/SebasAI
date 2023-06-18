@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SebasAI/static/css/main.04ef0cd2.css",
+    "main.js": "/SebasAI/static/js/main.ae0874b3.js",
+    "index.html": "/SebasAI/index.html",
+    "main.04ef0cd2.css.map": "/SebasAI/static/css/main.04ef0cd2.css.map",
+    "main.ae0874b3.js.map": "/SebasAI/static/js/main.ae0874b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04ef0cd2.css",
+    "static/js/main.ae0874b3.js"
+  ]
+}
