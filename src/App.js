@@ -4,7 +4,7 @@ import './index.css';
 import { useState } from 'react';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react"
 
-const API_KEY = "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"
+const API_KEY = "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"
   //  organization: "org-ad55odHhWO0W05x66rXRFUMo"
  
 const App = () => {
@@ -44,7 +44,7 @@ let apiMessages = chatMessages.map((messageObject) => {
 
 const systemMessage = {
   role: "system",
-  content: "Explain all concepts like i am 10 years old"
+  content: "Explica todo como un policia racista"
 }
 
 const apiRequestBody = {
