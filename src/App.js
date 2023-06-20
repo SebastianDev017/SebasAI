@@ -1,12 +1,8 @@
-
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import './index.css';
 import { useState } from 'react';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react"
 
-const API_KEY = "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"
-  //  organization: "org-ad55odHhWO0W05x66rXRFUMo"
- 
 const App = () => {
 
   const [typing, setTyping] = useState(false);
@@ -58,7 +54,7 @@ const apiRequestBody = {
 await fetch("https://api.openai.com/v1/chat/completions",{
   method: "POST",
   headers: {
-    "Authorization": "Bearer " + API_KEY,
+    "Authorization": "Bearer " + process.env.REACT_APP_API_KEY,
     "Content-Type": "application/json"
   },
   body: JSON.stringify(apiRequestBody)
@@ -85,27 +81,27 @@ await fetch("https://api.openai.com/v1/chat/completions",{
           <div className='info_logo'></div>
           <h1>Sebas - A.I</h1>
           <div className='info_documentation'>
-          <a href='https://www.openai.com'> <i class="fa-regular fa-file" /> Documentacion API</a>
+          <a href='https://www.openai.com'> <i className="fa-regular fa-file" /> <br /> <span>Doc. API</span></a>
             <br />
-          <a href='https://www.linkedin.com/in/sebastiandevv'> <i class="fa-brands fa-linkedin" /> Mi LinkedIn</a>
+          <a href='https://www.linkedin.com/in/sebastiandevv'> <i className="fa-brands fa-linkedin" /> <br /> <span>LinkedIn</span></a>
             <br />
-          <a href='mailto:sruizramirez11@gmail.com'> <i class="fa-regular fa-envelope" /> Enviame un E-mail</a>
+          <a href='mailto:sruizramirez11@gmail.com'> <i className="fa-regular fa-envelope" /> <br /> <span>E-mail</span></a>
           </div>
         </div>
 
-        <MainContainer>
-          <ChatContainer>
+        <MainContainer style={{width: "75%"}}>
+          <ChatContainer >
             <MessageList
             scrollBehavior='smooth'
             typingIndicator={typing ? <TypingIndicator content="SebasAI esta escribiendo..." /> : null}
             >
               {
                 messages.map((message,i) =>{
-                  return <Message key={i} model={message} />
+                  return <Message key={i} model={message} style={{ width: "100%", height: "auto", padding: "0px"}}/>
                 })
               }
-            </MessageList>
-            <MessageInput placeholder='Escribe tu mensaje aqui' onSend={handleSend}/>
+            </MessageList >
+            <MessageInput placeholder='Mensaje' onSend={handleSend} />
           </ChatContainer>
         </MainContainer>
       </div>
