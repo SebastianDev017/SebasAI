@@ -41,7 +41,7 @@ let apiMessages = chatMessages.map((messageObject) => {
 
 const systemMessage = {
   role: "system",
-  content: "Explica todo como un policia racista"
+  content: "Explica todo como desarrollador web con mas de 5 años de experiencia en el front-end"
 }
 
 const apiRequestBody = {
