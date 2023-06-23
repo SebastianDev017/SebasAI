@@ -19,10 +19,7 @@
   height: 100vh;
   width: 100vw;
 }
-.cs-main-container{
-  
-  display: none;
-}
+
 .cs-main-container .cs-chat-container{
   padding: 20px 20px 0px 20px;
 }
@@ -101,8 +98,6 @@ a:hover{
   background-color: #2d8fe026;
   transition: 300ms ease;
 }
-
-.cs-message-input__tools:first-child{display:none;}
 @media screen and (max-width:900px){
   .info_documentation a{
     text-decoration:none;
@@ -198,9 +193,7 @@ a:hover{
     margin: auto;
   }
   
-  .cs-message-input__tools:first-child{
-    display:none;
-  }
+
   .cs-message__html-content{
     font-size: 12px;
   }
@@ -224,9 +217,7 @@ a:hover{
     display: flex;
     margin: auto;
   }
-  .cs-message-input__tools:first-child{
-    display:none;
-  }
+
   .cs-message__html-content{
     font-size: 10px;
   }
@@ -238,9 +229,6 @@ a:hover{
   }
   .info_logo{
     display: none;
-  }
-  .cs-message-input__tools:first-child{
-    display:none;
   }
   .info{
     width: 25%;
