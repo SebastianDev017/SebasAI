@@ -2,7 +2,7 @@
   "name": "sebasai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cheerful-platypus-ceb224.netlify.app/",
+  "homepage": "https://sebas-ai.netlify.app/",
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.10.1",
     "@testing-library/jest-dom": "^5.16.5",
