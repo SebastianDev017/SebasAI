@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SebasAI/static/css/main.0e803a39.css",
-    "main.js": "/SebasAI/static/js/main.01985a6d.js",
-    "index.html": "/SebasAI/index.html",
-    "main.0e803a39.css.map": "/SebasAI/static/css/main.0e803a39.css.map",
-    "main.01985a6d.js.map": "/SebasAI/static/js/main.01985a6d.js.map"
+    "main.css": "/static/css/main.0e803a39.css",
+    "main.js": "/static/js/main.f2e94794.js",
+    "index.html": "/index.html",
+    "main.0e803a39.css.map": "/static/css/main.0e803a39.css.map",
+    "main.f2e94794.js.map": "/static/js/main.f2e94794.js.map"
   },
   "entrypoints": [
     "static/css/main.0e803a39.css",
-    "static/js/main.01985a6d.js"
+    "static/js/main.f2e94794.js"
   ]
 }
