@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
-
+.cs-message-input__tools:first-child{display:none;}
 .App{
   width:100vw;
   height: 100vh;
