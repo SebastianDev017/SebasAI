@@ -93,7 +93,7 @@ await fetch("https://api.openai.com/v1/chat/completions",{
           <ChatContainer >
             <MessageList
             scrollBehavior='smooth'
-            typingIndicator={typing ? <TypingIndicator content="SebasAI esta escribiendo..." /> : null}}}
+            typingIndicator={typing ? <TypingIndicator content="SebasAI esta escribiendo..." /> : null}}
             >
               {
                 messages.map((message,i) =>{
