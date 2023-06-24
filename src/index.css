@@ -57,13 +57,13 @@ section{
   width: 140px;
   height: 140px;
   border-radius: 50%;
- /* background-image: url(); */
+  background-image: url(src/20230624154047__fpdl.in__robot-icon-circle-vector-illustration_418020-199_normal-removebg-preview.png);
   background-size: cover;
   background-position: center center;
   border: 2px solid #2d8fe07b;
   display: flex;
   margin: auto;
-  background-color: #bbb;
+  background-color: #2d8fe07b;
 }
 
 .info h1{
