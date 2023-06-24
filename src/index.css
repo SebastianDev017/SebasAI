@@ -147,11 +147,7 @@ a:hover{
     font-size: 16px;
     margin: 10px 0px;
   }
-  .info_logo{
-    width: 100px;
-    height: 100px;
 
-  }
   .info_documentation i{
     margin: 10px 5px;
     font-size: 24px;
@@ -169,6 +165,7 @@ a:hover{
     border: 2px solid #2d8fe07b;
     display: flex;
     margin: auto;
+    background-image:url(https://img.freepik.com/premium-vector/robot-icon-circle-vector-illustration_418020-199.jpg?w=740);
   }
   .info{
     padding: 30px 0px;
