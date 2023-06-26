@@ -102,7 +102,7 @@ await fetch("https://api.openai.com/v1/chat/completions",{
                 })
               }
             </MessageList >
-            <MessageInput placeholder='Mensaje' onSend={handleSend} style={{ position: "absolute", bottom: "20px", width:"96%"}}/>
+            <MessageInput placeholder='Mensaje' onSend={handleSend} style={{ width:"96%"}}/>
           </ChatContainer>
         </MainContainer>
       </div>
