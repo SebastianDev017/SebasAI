@@ -94,6 +94,7 @@ await fetch("https://api.openai.com/v1/chat/completions",{
             <MessageList
             scrollBehavior='smooth'
             typingIndicator={typing ? <TypingIndicator content="SebasAI esta escribiendo..." /> : null}
+            style={{paddingBottom:"20px"}}
             >
               {
                 messages.map((message,i) =>{
@@ -101,7 +102,7 @@ await fetch("https://api.openai.com/v1/chat/completions",{
                 })
               }
             </MessageList >
-            <MessageInput placeholder='Mensaje' onSend={handleSend} style={{ position: "fixed", bottom: "20px", width:"70%"}}/>
+            <MessageInput placeholder='Mensaje' onSend={handleSend} style={{ position: "fixed", bottom: "10px", width:"70%"}}/>
           </ChatContainer>
         </MainContainer>
       </div>
